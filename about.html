@@ -1,30 +1,98 @@
-<html lang="en">
+<!DOCTYPE html>
+<html>
+
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rianne Kim</title>
-    <meta name="description" content="welcome to my online home">
-    <meta name="author" content="Rianne Kim">
-   
-     <!-- Link to your favicon -->
-    <link rel="shortcut icon" type="image/png" href="../favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-   <!-- Link to your stylesheet -->
-    <link rel="stylesheet" href="../style.css">
-    <link rel="stylesheet" href="./about.css">
+    <title>Interactive Zine</title>
+
+    <!-- add reset to create consistency between browsers and devices. -->
+    <link rel="stylesheet" type="text/css" href="./reset.css">
+    <link rel="stylesheet" type="text/css" href="./about.css">
+
+    <!-- add defer to tell the browser to apply javascript after page has been completely parsed -->
+    <script type="text/javascript" src="./about.js" defer></script>
 </head>
 
 <body>
-    <div class="home">
-        <h1 class="headline">About Me</h1>
-        <img class="jackets" src="../assets/jackets.jpg">
-        <a href="../index.html">Go Back Home</a>
-        <ul>
-            <li><a class="nav-links" href="">Project One</a></li>
-            <li><a class="nav-links" href="">Project Two</a></li>
-        </ul>
+    <div class="playing">
+        <p>playing</p>
     </div>
-
+    <div class="km">
+        <p>281.31km (To.) <br> - KIMMUSEUM</p>
+    </div>
+    <p id="demo"></p>
+    <embed name="kimmuseum" src="/assets/kimmuseum.mp3" loop="false" hidden="true" autostart="true">
+     <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+    </div>
+    <style>
+        body {
+          font-family: "Lato", sans-serif;
+        }
+        
+        .sidenav {
+          height: 100%;
+          width: 0;
+          position: fixed;
+          z-index: 1;
+          top: 0;
+          right: 0;
+          background-color: #000000;
+          overflow-x: hidden;
+          transition: 0.5s;
+          padding-top: 60px;
+        }
+        
+        .sidenav a {
+          padding: 8px 8px 8px 32px;
+          text-decoration: none;
+          font-size: 25px;
+          color: #525a96;
+          display: block;
+          transition: 0.3s;
+        }
+        
+        .sidenav a:hover {
+          color: #f1f1f1;
+        }
+        
+        .sidenav .closebtn {
+          position: absolute;
+          top: 15px;
+          right: 25px;
+          font-size: 36px;
+          margin-left: 50px;
+        }
+        
+        @media screen and (max-height: 450px) {
+          .sidenav {padding-top: 15px;}
+          .sidenav a {font-size: 18px;}
+        }
+        </style>
+        </head>
+        <body>
+        
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="#">Home</a>
+          <a href="#">About</a>
+        </div>
+        
+        <span style="font-size:20px;cursor:pointer;margin-left:90rem;color: white;" onclick="openNav()">click here to navigate</span>
+        
+        <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+        </script>
 </body>
 
 </html>

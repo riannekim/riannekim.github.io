@@ -1,3 +1,30 @@
-.headline {
-    color: blue;
+body{
+    background-color: #211861;
 }
+  .playing{
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: italic;
+    font-size: 4em;
+    letter-spacing: 3px;
+    line-height: 5rem;
+    text-align: right;
+    margin-top: 30rem;
+    margin-right: 80rem;
+  }
+
+  .km{
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: italic;
+    font-size: 3em;
+    letter-spacing: 3px;
+    line-height: 3.5rem;
+    text-align: left;
+    margin-top: 3rem;
+    margin-left: 8rem;
+  }
+
+  p {
+    color: white;
+  }

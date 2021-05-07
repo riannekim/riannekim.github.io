@@ -1,29 +1,34 @@
-body {
-    margin: 0;
+body{
+    background-image: url('https://media.giphy.com/media/vMSXa7KFGx49aeeXhe/giphy.gif');
+    background-size: cover;
+    
+    padding:0;
+    margin:0;
 }
+  .playing{
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: italic;
+    font-size: 4em;
+    letter-spacing: 3px;
+    line-height: 5rem;
+    text-align: right;
+    margin-top: 30rem;
+    margin-right: 80rem;
+  }
 
-ul {
-    list-style-type: none;
-}
+  .km{
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: italic;
+    font-size: 3em;
+    letter-spacing: 3px;
+    line-height: 3.5rem;
+    text-align: left;
+    margin-top: 3rem;
+    margin-left: 8rem;
+  }
 
-.home {
-    width: 100%;
-    height: 100%;
-    background-color: lightpink;
-    padding: 20px;
-}
-
-.headline {
-    font-size: 5rem;
-    font-family: sans-serif;
-    color: limegreen;
-}
-
-.nav-links {
-    color: black;
-    font-size: 50px;
-    text-decoration: none;
-}
-.jackets {
-    width: 400px;
-}
+  p {
+    color: white;
+  }
