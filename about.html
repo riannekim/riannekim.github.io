@@ -16,14 +16,71 @@
 </head>
 
 <body>
-    <div class="playing">
-        <p>playing</p>
+    <div class="navigation" onclick="openNav()">click here to navigate</div>
+    <div class="button">
+        <button onclick="typeWriter()">Click me</button>
     </div>
-    <div class="km">
-        <p>281.31km (To.) <br> - KIMMUSEUM</p>
-    </div>
+
+
     <p id="demo"></p>
-    <embed name="kimmuseum" src="/assets/kimmuseum.mp3" loop="false" hidden="true" autostart="true">
+    <script>
+        var i = 0;
+        var txt = 'Hello. My name is Rianne Kim. I attend Parsons School of Design with communication design major. I am a creator and an artist. I would like to work in the branding industry in the future. If you would like to take a look at my projects, please click the links below.';
+        var speed = 50;
+            
+        function typeWriter() {
+            if (i < txt.length) {
+            document.getElementById("demo").innerHTML += txt.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+            }
+        }
+    </script>
+    <div class="projects">
+        <div class="studio">
+            <p>studio</p>
+        </div>
+        <div class="storytelling">
+            <p>Cross-Platform Storytelling</p>
+        </div>
+        <div class="networks">
+            <p><a href="https://honored-seed-exception.glitch.me/index3.html">Stories as Networks</a></p>
+        </div>
+        <div class="elastic">
+            <p>Elastic Collection</p>
+        </div>
+        <div class="airtable">
+            <p>Airtable</p>
+        </div>
+        <div class="input">
+            <p>Input/Output</p>
+        </div>
+        <div class="lab">
+            <p>lab</p>
+        </div>
+        <div class="craigslist">
+            <p>Craigslist Ad</p>
+        </div>
+        <div class="expression">
+            <p>Expression</p>
+        </div>
+        <div class="responsive">
+            <p>Responsive Screens</p>
+        </div>
+        <div class="calendar">
+            <p>Calendar</p>
+        </div>
+        <div class="zine">
+            <p><a href="https://riannekim.github.io/interactive-zine-rianne/">Interactive Zine</a></p>
+        </div>
+        <div class="mini">
+            <p>Mini Collection</p>
+        </div>
+    </div>
+    
+
+    <p id="demo"></p>
+    <embed name="kimmuseuminst" src="/assets/kimmuseuminst.mp3" loop="false" hidden="true" autostart="true">
      <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="index.html">Home</a>
@@ -82,8 +139,6 @@
           <a href="#">About</a>
         </div>
         
-        <span style="font-size:20px;cursor:pointer;margin-left:90rem;color: white;" onclick="openNav()">click here to navigate</span>
-        
         <script>
         function openNav() {
           document.getElementById("mySidenav").style.width = "250px";
@@ -93,6 +148,7 @@
           document.getElementById("mySidenav").style.width = "0";
         }
         </script>
+
 </body>
 
 </html>
